@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -114,6 +115,35 @@ public class Main {
         for (int i = 0; i < plants.size(); i++) {
             System.out.println(plants.get(i));
         }
+        String text = "laba diena";
+        String text1 = "laba diena";
 
+//        if (text == text1) {
+        if (text.equals(text1)) {
+            System.out.println("lygus");
+        } else {
+            System.out.println("nelygus");
+        }
+
+
+        Book bookA = new Book();
+        book2.setTitle("Žiedų valdovas. Dvi tvirtovės");
+        book2.setPages(352);
+        book2.setReleaseYear(1954);
+
+        Book bookB = new Book();
+        book2.setTitle("Žiedų valdovas. Dvi tvirtovės");
+        book2.setPages(352);
+        book2.setReleaseYear(1954);
+        Book bookC = bookA;
+        System.out.println(bookC == bookA);
+        System.out.println(bookA == bookB);
+        System.out.println(bookA.equals(bookB));
+
+        Object belekas = 40;
+        belekas = "labas";
+        belekas = 40.14;
+        belekas = true;
+        belekas =bookA;
     }
 }

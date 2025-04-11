@@ -46,4 +46,9 @@ public class Book {
     }
      */
 
+//    @Override
+//    public boolean equals(Object obj) {
+//        Book b1 = (Book) obj;
+//        return this.title == b1.title;
+//    }
 }

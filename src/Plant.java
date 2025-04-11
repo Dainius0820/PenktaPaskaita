@@ -66,17 +66,14 @@ public class Plant {
     public String toString () {
         return "Bendras pavadinimas: " + this.commonName +
                 ", lotyniškas pavadinimas: " + this.latinName +
-                ", ar vienmetis: " + this.isAnnual + ", žemynas: " +
-                this.continent + ", suaugusio augalo aukštis: " +
-                this.heightGrown + "m, ar valgomas?: " + this.isEdible;
+                ((this.isAnnual) ? " vienmetis" : " daugiametis") +
+                ", žemynas: " + this.continent +
+                ", suaugusio augalo aukštis: " + this.heightGrown +
+                ((this.isEdible) ? " valgomas" : " nevalgomas"); //ternary operator (vienos eilutes if)
+//        if(this.isEdible){
+//            return " valgomas";
+//        }else{
+//            return " nevalgomas";
+//        }
     }
-
-
-
-
-
-
-
-
-
 }
